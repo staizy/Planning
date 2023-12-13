@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Планировщик</title>
+    <link rel="stylesheet" href="Planning.css">
+    <script src="Planning.js"></script>
+</head>
+<body>
+    <header>
+        ПЛАНИРОВЩИК ДЕЛ
+    </header>
+    <div class="enter" align="center">
+        <input maxlength="100" class="add" id="textInput" onkeydown="if (event.key === 'Enter') { event.preventDefault(); addToList(); }"><button class="add" onclick="addToList()">Добавить задачу</button>
+    </div>
+    <div class="todoList">
+
+    </div>
+    <div class="delete-completed-container" align="right" style="display: none;">
+        <button class="delete-completed" onclick="deleteCompletedTasks()">Удалить выполненные задачи</button>
+    </div>
+    <div class="delete-all-container" align="right" style="display: none;">
+        <button class="delete-all" onclick="deleteAllTasks()">Удалить все задачи</button>
+    </div>
+</body>
+</html>
